@@ -41,10 +41,8 @@ function init(){
 }
 
 function loop(){
-    
+
 }
-
-
 
 
 const goFullscreen = (element) => {
