@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Bailey Russo's Audio Visualizer</title>
+	<link href="styles/default-styles.css" type="text/css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<script src="../src/loader.js" type="module"></script>
+
+</head>
+
+<body>
+
+<main>
+	<h1>Audio Visualizer</h1>
+	<canvas width="800" height="400"></canvas>
+	<div id="controls">
+
+		<section>
+			<button id="fsButton">Full Screen</button>
+			<br>
+			<label>Track: 
+				<select id="trackSelect" class = "dropdown">
+					<option value="media/UltraBass.webm" selected>Ultra Bass</option>
+					<option value="media/HarlemShake.webm">Harlem Shake</option>
+					<option value="media/Kernkraft.webm">Kernkraft</option>
+				</select>
+			</label>
+
+			<br>
+				<span><button type="button" id = "randomColor">Random Color</button></span>
+			<br>
+				<input type="checkbox" id="autoChange" name="autoChange">
+				<label for="autoChange"> Auto Change Color</label><br>
+
+				<!--
+					https://www.w3schools.com/howto/howto_css_switch.asp
+				-->
+			<span>Rectangles or Circles</span>
+				<input type="checkbox" id="switch"
+							class="checkbox" /> 
+				<label for="switch" class="toggle"> 
+				
+				</label> 
+				<br>
+				<p>Number of Rows</p>
+				<input type="range" id="numberRows" name="numberRows" min="2" max="24" value="24">
+
+		  </section>
+
+		  <audio controls src ="media/UltraBass.webm" id ="audioPlayer"></audio>
+	</div>
+</main>
+</body>
+</html>
